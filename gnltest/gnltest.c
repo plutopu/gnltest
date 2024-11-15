@@ -1,6 +1,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include "get_next_line.h"
+// cc -I/home/mshulgin/Projects/getnextline get_next_line.c get_next_line_utils.c /home/mshulgin/Projects/gnltest/gnltest.c
 
 void test_get_next_line(const char *filename)
 {
