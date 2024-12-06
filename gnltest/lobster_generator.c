@@ -14,7 +14,8 @@ void i_control_the_die(const char *filename, const char *line_content, size_t li
 	}
 
 	fclose(file);
-	}
+}
+//TODO: add a generatot for a line longer than 2k, for various line lengths
 
 int main() {
 	const char	*filename = "controlthedie.txt";
@@ -22,7 +23,7 @@ int main() {
 	size_t lobsters = 1000001;
 
 	i_control_the_die(filename, line_content, lobsters);
-	printf("Large file '%s' created with %zu lines.\n", filename, lobsters);
+	printf("%zu lobsters await their fate\n", lobsters - 1);
 
 	return 0;
 }
